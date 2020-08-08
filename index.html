@@ -69,7 +69,7 @@
  
         <div class="arrow">
  
-            <img src="textures/sprites/arrow.png"></img>
+            <img src="names/arrow.png"></img>
         </div>
  
 
@@ -78,11 +78,13 @@
 
         <script type="module">
 
-            import * as THREE from '../build/three.module.js';
+           // import * as THREE from '../build/three.module.js';
+            import * as THREE from 'lib/node_modules/three/build/three.module.js';
 
         
 
-            import { GUI } from './jsm/libs/dat.gui.module.js';
+            // import { GUI } from './jsm/libs/dat.gui.module.js';
+             import { GUI } from 'lib/node_modules/three/examples/jsm/libs/dat.gui.module.js';
 
             
             var camera, scene, renderer , materials = [], parameters;
@@ -108,11 +110,11 @@
 
                 var textureLoader = new THREE.TextureLoader();
 
-                var sprite1 = textureLoader.load( 'textures/sprites/wordTest.png' );
-                var sprite2 = textureLoader.load( 'textures/sprites/wordTest2.png' );
-                var sprite3 = textureLoader.load( 'textures/sprites/wordTest3.png' );
-                var sprite4 = textureLoader.load( 'textures/sprites/wordTest4.png' );
-                var sprite5 = textureLoader.load( 'textures/sprites/wordTest5.png' );
+                var sprite1 = textureLoader.load( 'names/wordTest.png' );
+                var sprite2 = textureLoader.load( 'names/wordTest2.png' );
+                var sprite3 = textureLoader.load( 'names/wordTest3.png' );
+                var sprite4 = textureLoader.load( 'names/wordTest4.png' );
+                var sprite5 = textureLoader.load( 'names/wordTest5.png' );
 
                 for ( var i = 0; i < 10000; i ++ ) {
 
